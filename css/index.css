@@ -423,8 +423,8 @@ body>section:first-child{
     align-self: center;
     gap: 30px;
 }
-.wrapper>button{
-    position: relative;
+.get{
+    position: absolute;
     align-self: end;
     width: 170px;
     height: 60px;
@@ -439,7 +439,31 @@ body>section:first-child{
     color: #FFFFFF;
     cursor: pointer;
     z-index: 3;
+    overflow: hidden;
 }
+.get::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.64), transparent);
+    transform: skewX(-40deg);
+    transition: left 3s ease-in-out;
+}
+.get:hover::before {
+    left: 170%;
+}
+.get:hover{
+    transform: scale(1.07);
+    transition: left 20s ease-in-out;
+}
+.get:not(:hover)::before {
+    left: -100px;
+    transition: left 0.8s ease-in-out;
+}
+
 .card{
     width: 80px;
     border-radius: .75rem;
@@ -1505,12 +1529,137 @@ input:checked + label .desc{
 /*}*/
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .contact{
-    background: #1a1c28;
+    background: #161821;
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 .contact>div:first-child{
+    position: absolute;
+    bottom: 0;
+    border-top-right-radius: 100%;
+    width: 300px;
+    height: 250px;
+    background-color: #292b36;
+    animation-name: increase_scale;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes increase_scale {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+.contact>div:nth-child(2){
+    position: absolute;
+    left: 120px;
+    bottom: 0;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    width: 400px;
+    height: 200px;
+    background-color: #292b36;
+    animation-name: increase_scale;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.contact>div:nth-child(3){
+    position: absolute;
+    left: -60px;
+    bottom: 0;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    width: 500px;
+    height: 200px;
+    background-color: #4c4f5e;
+    animation-name: increase_scale;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.contact>div:nth-child(4){
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    border-top-left-radius: 100%;
+    width: 230px;
+    height: 500px;
+    background-color: #292b36;
+    animation-name: increase_scale;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.contact>div:nth-child(5){
+    position: absolute;
+    right: 150px;
+    bottom: 0;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 80%;
+    width: 200px;
+    height: 280px;
+    background-color: #292b36;
+    animation-name: increase_scale;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.contact>div:nth-child(6){
+    position: absolute;
+    left: 330px;
+    bottom: 0;
+    border-top-left-radius: 130%;
+    border-top-right-radius: 70%;
+    width: 500px;
+    height: 230px;
+    background-color: #4c4f5e;
+    animation-name: increase_scale;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.contact>div:nth-child(7){
+    position: absolute;
+    left: 730px;
+    bottom: 0;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 70%;
+    width: 500px;
+    height: 260px;
+    background-color: #4c4f5e;
+    animation-name: increase_scale;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.contact>div:nth-child(8){
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    border-top-left-radius: 100%;
+    width: 250px;
+    height: 280px;
+    background-color: #4c4f5e;
+    animation-name: increase_scale;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+.contact>div:nth-child(9){
     width: 100%;
     height: 510px;
     position: relative;
@@ -1522,7 +1671,7 @@ input:checked + label .desc{
     height: 500px;
 }
 .contact h1{
-    font-size: 140px;
+    font-size: 130px;
     font-family: Dubai;
 }
 .contact>div>div>h1:first-child{
@@ -1604,9 +1753,9 @@ input:checked + label .desc{
     background-image:  url("mypic1.jpg");
     background-size: cover;
 }
-.contact>div:nth-child(2){
+.contact>div:nth-child(10){
     border: 0.5px solid white;
-    width: 1200px;
+    width: 900px;
     position: absolute;
     left: 0;
     right: 0;
