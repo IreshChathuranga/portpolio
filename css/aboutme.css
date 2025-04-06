@@ -285,7 +285,7 @@ body>section:first-child{
     bottom: 0;
     top: -40px;
     margin: auto;
-    background-image: url("mypic7.jpg");
+    background-image: url("mypic8.jpg");
     background-size: cover;
     animation-name: increase_scale;
     animation-duration: 3s;
@@ -312,7 +312,7 @@ body>section:first-child{
     #C1C9D9, #beb7b7);
     filter: blur(40px);
 }
-.circle11{
+.circle1{
     position: absolute;
     top: 250px;
     width: 120px;
@@ -322,13 +322,13 @@ body>section:first-child{
     background-image: linear-gradient(200deg, #111111, #b9b9da, #1f4188, #7722c7,
     #d40fda, #d90b72);
     filter: blur(40px);
-    animation-name: circle11_animate;
+    animation-name: circle1_animate;
     animation-duration: 15s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
 }
-@keyframes circle11_animate {
+@keyframes circle1_animate {
     from{
         top: 300px;
     }
@@ -337,7 +337,7 @@ body>section:first-child{
         right: 1100px;
     }
 }
-.circle12{
+.circle2{
     position: absolute;
     top: 500px;
     right: 700px;
@@ -348,21 +348,94 @@ body>section:first-child{
     #C1C9D9, #494747);
     filter: blur(50px);
 }
-.circle16{
+.circle3{
     position: absolute;
-    top: 530px;
-    right: 400px;
+    top: 300px;
+    right: 600px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image: linear-gradient(90deg, #ffffff);
+    filter: blur(20px);
+    animation-name: circle3_animate;
+    animation-duration: 30s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes circle3_animate {
+    from{
+        top: 300px;
+    }
+    to{
+        top: 20px;
+        right: 20px;
+    }
+}
+.circle4{
+    position: absolute;
+    top: 100px;
+    right: 500px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-image: linear-gradient(90deg, #dc0b81);
+    filter: blur(10px);
+    animation-name: circle4_animate;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes circle4_animate {
+    from{
+        top: 100px;
+    }
+    to{
+        top: 20px;
+        right: 500px;
+    }
+}
+.circle5{
+    position: absolute;
+    top: 100px;
+    right: 800px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-image: linear-gradient(90deg, #0b8cdc);
+    filter: blur(3px);
+    animation-name: circle5_animate;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes circle5_animate {
+    from{
+        top: 100px;
+    }
+    to{
+        top: 20px;
+        right: 1000px;
+    }
+}
+.circle6{
+    position: absolute;
+    top: 100px;
+    right: 570px;
     width: 50px;
     height: 50px;
     border-radius: 100%;
     background-image: linear-gradient(90deg, #273673, #1616d2, #247496, #9f2e90);
     filter: blur(10px);
 }
-.circle13{
-    z-index: 0;
+.circle7{
+    /*z-index: 11;*/
     position: absolute;
-    top: 350px;
-    right: 700px;
+    border: 1px solid white;
+    top: 450px;
+    right: 1000px;
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -372,20 +445,20 @@ body>section:first-child{
     #2c0942,#cecec9
     );
     filter: blur(20px);
-    animation-name: circle13_animate;
-    animation-duration: 20s;
+    animation-name: circle7_animate;
+    animation-duration: 6s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
-@keyframes circle13_animate {
+@keyframes circle7_animate {
     0%{
-        top: 200px;
-        right: 300px;
+        top: 450px;
+        right: 1000px;
     }
     100%{
-        top: 500px;
-        right: 100px;
+        top: 480px;
+        right: 1100px;
     }
 }
 .circle15{

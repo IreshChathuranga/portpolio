@@ -13,7 +13,7 @@
 
 </head>
 <body>
-    <section>
+    <section class="mainsection">
         <header>
             <!--            navigation bar-->
 <!--            <div class="navbar">-->
@@ -32,7 +32,7 @@
 <!--            </div>-->
         </header>
         <section class="herosection">
-            <div class="section">
+<!--            <div class="section">-->
                 <!--            left side-->
                 <div class="socialbar">
                     <div class="socialmedia">
@@ -62,11 +62,11 @@
                 </div>
                 <!--        right side-->
                 <div class="profile">
-                    <div>
-                        <img src="">
+                    <div class="mainpic">
+                        <img class="mypic" src="css/blackandwhite.jpg">
                     </div>
                     <div class="description">
-                        <div>Hello! I'm</div>
+                        <div class="hello">Hello! I'm</div>
                         <div class="words">
                             <span>UI/UX Designer</span>
                             <span>Web Designer</span>
@@ -78,7 +78,7 @@
                         <i class="fa-solid fa-hands-clapping fa-2xl" style="color: #e6ce33;"></i>
                     </div>
                 </div>
-            </div>
+<!--            </div>-->
         </section>
     </section>
     <section class="wrapper" id="project">
@@ -167,22 +167,79 @@
         <div class="mainslider">
             <div class="silder">
                 <div class="item">
-                    <h1>Slider1</h1>
-                </div>
-                <div class="item">
-                    <h1>Slider2</h1>
-                </div>
-                <div class="item">
-                    <h1>Slider3</h1>
-                </div>
-                <div class="item">
-                    <h1>Slider4</h1>
-                </div>
-                <div class="item">
-                    <div class="image">
-                        <h1>Slider5</h1>
+                    <div><img src="css/image16.jpg"></div>
+                    <div>
+                        <h1>Javafx</h1>
+                        <p1>GUI development using JavaFX.</p1>
+                    </div>
+                    <div>
+                        <a href="https://github.com/IreshChathuranga/gdse-javafx" target="_blank">
+                            <button class="item-btn">view</button>
+                        </a>
                     </div>
                 </div>
+                <div class="item">
+                    <div><img src="css/image15.jpg"></div>
+                    <div>
+                        <h1>ORM</h1>
+                        <p1>Mapping objects to database tables.</p1>
+                    </div>
+                    <div>
+                        <a href="https://github.com/IreshChathuranga/ORM-relationship" target="_blank">
+                            <button class="item-btn">view</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div><img src="css/image14.jpg"></div>
+                    <div>
+                        <h1>Layered Design</h1>
+                        <p1>Separation of concerns using layers.</p1>
+                    </div>
+                    <div>
+                        <a href="https://github.com/IreshChathuranga/layered-architecture-1st-sem-finalproject" target="_blank">
+                            <button class="item-btn">view</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div><img src="css/image10.jpg" class="item-img1"></div>
+                    <div>
+                        <h1>CSS animation</h1>
+                        <p1>Smooth animation using only CSS.</p1>
+                    </div>
+                    <div>
+                        <a href="https://github.com/IreshChathuranga/css-assignment4" target="_blank">
+                            <button class="item-btn">view</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div><img src="css/image12.jpg"></div>
+                    <div>
+                        <h1>HTML</h1>
+                        <p1>Basic webpage structure using HTML.</p1>
+                    </div>
+                    <div>
+                        <a href="https://github.com/IreshChathuranga/CSS-assignment03-part1" target="_blank">
+                            <button class="item-btn">view</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div><img src="css/image13.jpg"></div>
+                    <div>
+                        <h1>Java Script</h1>
+                        <p1>Interactive feature using JavaScript only.</p1>
+                    </div>
+                    <div>
+                        <a href="https://github.com/IreshChathuranga/css--js-example" target="_blank">
+                            <button class="item-btn">view</button>
+                        </a>
+                    </div>
+                </div>
+                <button id="next">></button>
+                <button id="prev"><</button>
             </div>
         </div>
         <button class="getmore">Get More</button>
@@ -322,5 +379,6 @@
         </div>
         <div></div>
     </section>
+    <script src="js/index.js"></script>
 </body>
 </html>

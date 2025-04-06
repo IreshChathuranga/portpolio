@@ -1,0 +1,194 @@
+body{
+    width: 100%;
+    height: 100vh;
+    /*background: #104242;*/
+    overflow-x: hidden;
+}
+section{
+    width: 100%;
+    height: 170vh;
+    position: relative;
+    background: black;
+}
+.nav{
+    display: flex; /*myicon eka ha navmenu eka ekama rekawakt gena ema*/
+    border-bottom: 1px solid #c9ff00;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    z-index: 11;
+    justify-content: space-between; /*myicon eka ha navmenu eka athra parathraya thabima*/
+    backdrop-filter: blur(5px);/*nav eka blur kirima*/
+}
+.myicon{
+    width: 80px;
+    height: 70px;
+}
+.navmenu{
+    display: flex;
+    align-items: center;
+    gap: 50px;/*items athra gap eka*/
+    margin-right: 30px;/*contact item eka pathten gap eka hadima*/
+}
+.navmenu li{
+    list-style: none;/*list eke decoration eka iwath kirima*/
+    font-size: 14px;
+}
+.navmenu li a{
+    text-decoration: none;/*underline eka nathi kirima*/
+    font-weight: bold;
+    font-family: Arial;
+    color: #c9ff00;
+    transition: 0.3s ease;/*glow eka time eka*/
+    position: relative;
+}
+.navmenu li a:hover {
+    color: #fff; /* White color on hover */
+    transform: scale(1.1); /* Slightly enlarge the text */
+    text-shadow: 0px 0px 10px #c9ff00; /* Glow effect */
+}
+.navmenu li a:before{/*item yathin underline wenwa*/
+    content: '';
+    position: absolute;
+    background: #c9ff00;
+    width: 0;
+    height: 2px;
+    bottom: -7px;
+    left: 0;
+    transition: 0.7s ease;/*item eka underline wemata yana time eka*/
+}
+.fa-bars{
+    display: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: -50px;
+    top: 20px;
+}
+.navmenu li a:hover:before{
+    width: 100%;
+}
+.section{
+    position: relative;
+}
+.socialmedia a img{
+    width: 30px;
+    height: 30px;
+}
+.socialbar{
+    height: 55vh;
+    display: flex;
+    flex-direction: column;/*socialmedias tika pahalata set kirima*/
+    justify-content: center;/*socialbar eka page eka center kirima*/
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 70px;
+    margin: auto;
+    z-index: 10;
+    transform: translate(-60px, 0);/*all socialbar eka ma 70px pasupasata yawema*/
+}
+.socialmedia a{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    backdrop-filter: blur(5px);
+    display: block;
+    padding: 10px;
+    width: 90px;
+    text-align: right;/*social media tika right ekt gena ema*/
+    transition: 1s;
+    transition-property: transform;
+}
+.socialmedia a:hover{
+    transform: translate(30px, 0);/*curser eka thibbama 30px idiriyata gaman kirima*/
+}
+#facebook:hover{
+    background: #1877F2;
+}
+#facebookimg{
+    transition: 0.3s ease;
+}
+#facebookimg:hover{
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px #ffffff;
+}
+#github:hover{
+    background:  #181717;
+}
+#githubimg{
+    transition: 0.3s ease;
+}
+#githubimg:hover{
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px #ffffff;
+}
+#instergram:hover{
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+#instergramimg{
+    transition: 0.3s ease;
+}
+#instergramimg:hover{
+    transform: scale(1.1);/*hover krama img eka loku wela penima*/
+    text-shadow: 0px 0px 10px #ffffff;
+}
+#linkedin:hover{
+    background: #0A66C2;;
+}
+#linkedinimg{
+    transition: 0.3s ease;
+}
+#linkedinimg:hover{
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px #ffffff;
+}
+.base{
+    position: absolute;
+    border: 1px solid white;
+    top: 60px;
+    width: 100%;
+    height: 160vh;
+    display: grid;
+    grid-template-columns:repeat(1, 3fr) ;
+}
+.base>div{
+    border: 1px solid white;
+}
+.base>div:first-child{
+    width: 100%;
+    height: 30vh;
+    border: 1px solid #cad100;
+}
+.base>div:nth-child(2){
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    border: 1px solid #cad100;
+}
+.middle-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1200px;
+    height: 580px;
+    border: 1px solid #f6ffdc;
+    display: flex;
+}
+.from-div{
+    width: 850px;
+    height: 580px;
+    border: 1px solid #f6ffdc;
+}
+.my-details{
+    width: 350px;
+    height: 580px;
+    border: 1px solid #f6ffdc;
+}
+.base>div:nth-child(3){
+    width: 100%;
+    height: 38vh;
+    border: 1px solid #cad100;
+}
