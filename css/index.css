@@ -14,6 +14,41 @@ section{
     height: 100vh;
     position: relative;
 }
+.dust-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+.dust {
+    position: absolute;
+    width: 1.8px;
+    height: 1.8px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 100%;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    animation: driftRight linear forwards;
+}
+@keyframes driftRight {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100vw);
+        opacity: 0;
+    }
+}
 body>section:first-child{
     background: black;
 }
@@ -175,11 +210,11 @@ body>section:first-child{
 }
 .mypic{
     z-index: 0;
-    width: 740px;
-    height: 700px;
+    width: 650px;
+    height: 750px;
     position: absolute;
-    left: 8px;
-    bottom: 445px;
+    left: 3px;
+    bottom: 390px;
     z-index: 0;
 }
 .description > div:first-child {
@@ -211,7 +246,7 @@ body>section:first-child{
 .description>div:nth-child(2){
     color: white;
     font-weight: bold;
-    font-family: Dubai;
+    font-family: Dubai , "SansSerif";
     font-size: 60px;
     position: absolute;
     top: 143px;
@@ -1905,12 +1940,86 @@ input:checked + label .desc{
     background-size: cover;
 }
 .contact>div:nth-child(10){
-    border: 0.5px solid white;
-    width: 900px;
+    width: 100%;
+    height: 300px;
     position: absolute;
     left: 0;
     right: 0;
+    top: 380px;
     margin:auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.contact>div:nth-child(10)>div:first-child{
+    /*position: absolute;*/
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: transparent;
+    position: relative;
+    /*margin-left: 30px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: white;*/
+    text-align: center;
+    border: none;
+}
+.scale-circle>div{
+    position: absolute;
+}
+.scale-circle>div:first-child{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    background-color: rgba(255, 255, 255, 0.35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-family: Dubai , "SansSerif";
+    font-weight: bold;
+    color: white;
+}
+.scale-circle>div:nth-child(2){
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    animation-name: send_animate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.scale-circle>div:nth-child(3){
+    width: 190px;
+    height: 190px;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    animation-name: send_animate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes send_animate {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+        border: none;
+    }
+}
+.contact>div:nth-child(10)>div:nth-child(2){
+    /*position: absolute;*/
+    width: 900px;
+    height: 1px;
+    border-radius: 100%;
+    background-color: white;
+    margin-right: 100px;
 }
 /*///////////////////////////////////////////////media query(800px) //////////////////////////////////*/
 @media all and (max-width: 800px) {

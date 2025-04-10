@@ -14,6 +14,18 @@
 </head>
 <body>
     <section>
+        <div class="circle11"></div>
+        <div class="circle12"></div>
+        <div class="circle13"></div>
+        <div class="circle14"></div>
+        <div class="circle15"></div>
+        <div class="circle16"></div>
+        <div class="circle17"></div>
+        <div class="circle18"></div>
+        <div class="circle19"></div>
+        <div class="circle20"></div>
+        <div class="circle21"></div>
+        <div class="circle22"></div>
         <header>
             <!--            navigation bar-->
             <!--            <div class="navbar">-->
@@ -21,9 +33,9 @@
                 <img class="myicon" src="../access/icon/ireshicon.png" alt="logo">
                 <i class="fa-solid fa-bars" style="color: #97fd72;"></i>
                 <ul class="navmenu">
-                    <li><a href="#" target="">Home</a></li>
-                    <li><a href="#" target="_parent">Projects</a></li>
-                    <li><a href="#" target="_parent">Assignments</a></li>
+                    <li><a href="index.html" target="">Home</a></li>
+                    <li><a href="index.html#project" target="_parent">Projects</a></li>
+                    <li><a href="" target="_parent">Assignments</a></li>
                     <li><a href="#" target="_parent">Gallery</a></li>
                     <li><a href="aboutme.html" target="_parent">About Me</a></li>
                     <li><a href="#" target="_parent">Contact</a></li>
@@ -58,15 +70,49 @@
                 </div>
                 <div class="base">
                     <div>
-                        <h1>let's start a project together</h1>
+                        <h1>let's start a <br>project <i id="together">together</i></h1>
                     </div>
                     <div>
                         <div class="middle-div">
-                            <div class="from-div"></div>
-                            <div class="my-details"></div>
+                            <div class="from-div">
+                                <form action="submit_form.php" method="post" class="from">
+                                    <label for="name" class="lable lable1"><i class="number">01</i>    What your name?</label>
+                                    <br><br>
+                                    <input class="input" type="text" id="name" name="name" required>
+                                    <br><br>
+
+                                    <label for="email" class="lable lable2"><i class="number">02</i>    What is your email?</label>
+                                    <br><br>
+                                    <input class="input" type="email" id="email" name="email" required>
+                                    <br><br>
+
+                                    <label for="message" class="lable lable3"><i class="number">03</i>    What service are you looking for?</label><br>
+                                    <br><br>
+                                    <textarea class="input" id="message" name="message" rows="1" cols="30"></textarea>
+                                    <br><br>
+
+                                    <label for="message" class="lable lable4"><i class="number">04</i>    Your massage</label><br>
+                                    <br><br>
+                                    <textarea class="input" id="message1" name="message1" rows="2" cols="30"></textarea>
+                                    <br><br>
+                                </form>
+                            </div>
+                            <div class="my-details">
+                                <div></div>
+                                <div>Contact Dtails</div>
+                                <div>ireshchathuranga63309@gmail.com</div>
+                                <div>+758563998</div>
+                            </div>
                         </div>
                     </div>
-                    <div></div>
+                    <div>
+                        <div class="send">
+                            <div>Send it</div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
                 </div>
 <!--                <div>-->
         </section>
